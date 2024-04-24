@@ -1,0 +1,29 @@
+.centro {
+    
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.izquierda {
+    size: 120px;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-areas: 
+    'a'
+    'b'
+    'c'
+    'd';
+}
+
+.sidebar {
+    grid-area: a;
+}
+
+.hora {
+    grid-area: b;
+}

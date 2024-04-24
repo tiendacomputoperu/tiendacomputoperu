@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>titulo de pagina</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mariconadas.css">
+
+<style>
+ 
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  👉Aprovecha las Ofertas👌
+</div><br><br>
+
+<div class="izquierda">
+  <div class="sidebar"> <!--NPI si cambio el nombre de la clase-->
+    Oferta segun la hora😐:
+  </div>
+
+  <div>
+    <div class="hora" id="hora"></div>
+  </div>
+
+
+
+</div>
+
+<div class="centro">
+  <div class="mouse">Mouse
+  </div>
+  <div class="box">Teclado</div>
+  <div class="box">Monitor</div>
+  <div class="box">Placa madre</div>
+  <div class="box">Procesador</div>
+  <div class="box">Targeta grafica</div>
+  
+  </div>
+</div>
+
+<div class="derecha">
+  Salir
+</div>
+
+
+
+<div class="footer">
+  Pagina principal
+</div>
+
+
+
+
+<script>
+  function updateDateTime() {
+    var now = new Date();
+    var dateString = now.toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    var timeString = now.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    document.getElementById('hora').innerHTML = '<strong>Fecha:</strong> ' + dateString + '<br><strong>Hora:</strong> ' + timeString;
+  }
+  setInterval(updateDateTime, 1000);
+</script>
+
+</body>
+</html>
